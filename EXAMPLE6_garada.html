@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>그라데이션</title>
+  <style>
+		div {
+			width:300px;
+			height:150px;
+			border-radius:10px;
+      margin-bottom:10px;
+		}
+  	.grad_blue {
+  		background: blue; /* css3 미지원 브라우저 */  		
+  		background: linear-gradient(to right bottom, blue, white); /* 최신 모던 브라우저 */
+  	}
+    .grad_red {
+  		background: red; /* css3 미지원 브라우저 */  		
+  		background: linear-gradient(45deg, red, white); /* 최신 모던 브라우저 */
+  	}
+    .grad_darkblue {
+  		background: red; /* css3 미지원 브라우저 */  		
+  		background: linear-gradient(225deg, darkblue, white); /* 최신 모던 브라우저 */
+  	}
+    .gradcircle1{
+			background:red;
+			background:radial-gradient(white, yellow, red);
+		}
+		.gradcircle2{
+			background:red;
+			background:radial-gradient(circle, white, yellow, red);
+		}
+    .gradcircle3{
+			background:darkblue;
+			background:radial-gradient(circle at 10% 10%, white, darkblue);
+		}
+    .gradcircle4{
+			background:darkblue;
+			background:radial-gradient(circle closest-side at 30% 40%, white, yellow,green);
+		}
+  </style>
+</head>
+<body>
+  <div class="grad_blue"></div>
+  <div class="grad_red"></div>
+  <div class="grad_darkblue"></div>
+  <div class="gradcircle1"></div>
+  <div class="gradcircle2"></div>
+  <div class="gradcircle3"></div>
+  <div class="gradcircle4"></div>
+ </body>
+</html>
